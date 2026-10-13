@@ -1,0 +1,18 @@
+{
+  "port": 8788,
+  "host": "127.0.0.1",
+  "channels": [
+    {
+      "model": "trae-glm",
+      "upstream": "http://127.0.0.1:19900/v1",
+      "apiKey": "sk-local",
+      "recipe": "auto"
+    },
+    {
+      "model": "marvis-hy4",
+      "upstream": "http://127.0.0.1:14605/v1",
+      "apiKey": "sk-local",
+      "recipe": "cot-hijack"
+    }
+  ]
+}

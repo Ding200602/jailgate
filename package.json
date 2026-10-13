@@ -1,0 +1,36 @@
+{
+  "name": "jailgate",
+  "version": "0.1.0",
+  "description": "反带 + 破甲一体的 OpenAI 兼容网关（LLM 安全红队测试工具）",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "jailgate": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0",
+    "undici": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "free-api",
+    "llm-gateway",
+    "red-teaming",
+    "jailbreak",
+    "prompt-engineering",
+    "openai-compatible",
+    "dsh-plugin"
+  ]
+}
